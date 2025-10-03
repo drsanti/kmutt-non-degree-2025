@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ND2025 Course Information</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap');
         
@@ -28,11 +29,11 @@
         
         
         .cards-container {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
             margin-bottom: 2rem;
-            max-width: 500px;
+            max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -187,13 +188,14 @@
         
         @media (max-width: 768px) {
             .cards-container {
+                grid-template-columns: 1fr;
                 gap: 1.5rem;
+                max-width: 500px;
             }
             
             .card {
                 padding: 1.5rem;
             }
-            
             
             body {
                 padding: 1rem;
@@ -207,117 +209,117 @@
             <!-- Card 1: ND01 -->
             <a href="nd1-link.html" class="card">
                 <div class="card-header">
-                    <div class="card-icon">🎓</div>
+                    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
                     <div class="card-title">ND01: Industrial Internet-of-Things Device Developer for Automation Systems</div>
                 </div>
                 
                 <div class="card-info">
                     <div class="info-item">
-                        <span class="info-icon">🗓</span>
+                        <span class="info-icon"><i class="fas fa-calendar-alt"></i></span>
                         <span>วันเสาร์ที่ 4 ตุลาคม 2568</span>
                     </div>
                     <div class="info-item">
-                        <span class="info-icon">🕘</span>
+                        <span class="info-icon"><i class="fas fa-clock"></i></span>
                         <span>เวลา 09:00 น.</span>
                     </div>
                     <div class="info-item">
-                        <span class="info-icon">📍</span>
+                        <span class="info-icon"><i class="fas fa-laptop"></i></span>
                         <span>เรียนออนไลน์</span>
                     </div>
                 </div>
                 
                 <div class="zoom-section">
-                    <h4>📹 Zoom Meeting</h4>
+                    <h4><i class="fas fa-video"></i> Zoom Meeting</h4>
                     <div class="meeting-id">Meeting ID: 944 1677 7704</div>
                 </div>
                 
                 <div class="instructions">
-                    <h4>📋 คำแนะนำ</h4>
+                    <h4><i class="fas fa-clipboard-list"></i> คำแนะนำ</h4>
                     <p>ครั้งนี้จะมีการชีแจงรายละเอียดต่าง ๆ ของหลักสูตร โดยเฉพาะเรื่องของสิทธิ์การเข้าถึงสิ่งต่าง ๆ เช่น เนื้อหา บริการออนไลน์ และการออกใบรับรอง สิทธิ์การเข้าเรียนหลักสูตรเข้มหลังจากนี้</p>
                     <p>เมื่อเข้ามาใน Zoom แล้วให้เปลี่ยนชื่อเป็นชื่อจริง-รหัสบัตรประชาชน 4 ตัวหลัง เช่น</p>
                     <div class="example">Nitikorn-1234</div>
                 </div>
                 
                 <div class="view-course">
-                    <span class="view-course-btn">ดูรายละเอียดหลักสูตร</span>
+                    <span class="view-course-btn"><i class="fas fa-eye"></i> ดูรายละเอียดหลักสูตร</span>
                 </div>
             </a>
             
             <!-- Card 2: ND02 -->
             <a href="nd2-link.html" class="card">
                 <div class="card-header">
-                    <div class="card-icon">🎓</div>
+                    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
                     <div class="card-title">ND02: Full-Stack Software Developer for Industrial Automation Systems</div>
                 </div>
                 
                 <div class="card-info">
                     <div class="info-item">
-                        <span class="info-icon">🗓</span>
+                        <span class="info-icon"><i class="fas fa-calendar-alt"></i></span>
                         <span>วันเสาร์ที่ 4 ตุลาคม 2568</span>
                     </div>
                     <div class="info-item">
-                        <span class="info-icon">🕘</span>
+                        <span class="info-icon"><i class="fas fa-clock"></i></span>
                         <span>เวลา 13:00 น.</span>
                     </div>
                     <div class="info-item">
-                        <span class="info-icon">📍</span>
+                        <span class="info-icon"><i class="fas fa-laptop"></i></span>
                         <span>เรียนออนไลน์</span>
                     </div>
                 </div>
                 
                 <div class="zoom-section">
-                    <h4>📹 Zoom Meeting</h4>
+                    <h4><i class="fas fa-video"></i> Zoom Meeting</h4>
                     <div class="meeting-id">Meeting ID: 937 5562 5071</div>
                 </div>
                 
                 <div class="instructions">
-                    <h4>📋 คำแนะนำ</h4>
+                    <h4><i class="fas fa-clipboard-list"></i> คำแนะนำ</h4>
                     <p>ครั้งนี้จะมีการชีแจงรายละเอียดต่าง ๆ ของหลักสูตร โดยเฉพาะเรื่องของสิทธิ์การเข้าถึงสิ่งต่าง ๆ เช่น เนื้อหา บริการออนไลน์ และการออกใบรับรอง สิทธิ์การเข้าเรียนหลักสูตรเข้มหลังจากนี้</p>
                     <p>เมื่อเข้ามาใน Zoom แล้วให้เปลี่ยนชื่อเป็นชื่อจริง-รหัสบัตรประชาชน 4 ตัวหลัง เช่น</p>
                     <div class="example">Nitikorn-1234</div>
                 </div>
                 
                 <div class="view-course">
-                    <span class="view-course-btn">ดูรายละเอียดหลักสูตร</span>
+                    <span class="view-course-btn"><i class="fas fa-eye"></i> ดูรายละเอียดหลักสูตร</span>
                 </div>
             </a>
             
             <!-- Card 3: ND03 -->
             <a href="nd3-link.html" class="card">
                 <div class="card-header">
-                    <div class="card-icon">🎓</div>
+                    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
                     <div class="card-title">ND03: Modern Systems Developer Specializing in Digital Twins and OPC-UA</div>
                 </div>
                 
                 <div class="card-info">
                     <div class="info-item">
-                        <span class="info-icon">🗓</span>
+                        <span class="info-icon"><i class="fas fa-calendar-alt"></i></span>
                         <span>วันอาทิตย์ที่ 5 ตุลาคม 2568</span>
                     </div>
                     <div class="info-item">
-                        <span class="info-icon">🕘</span>
+                        <span class="info-icon"><i class="fas fa-clock"></i></span>
                         <span>เวลา 09:00 น.</span>
                     </div>
                     <div class="info-item">
-                        <span class="info-icon">📍</span>
+                        <span class="info-icon"><i class="fas fa-laptop"></i></span>
                         <span>เรียนออนไลน์</span>
                     </div>
                 </div>
                 
                 <div class="zoom-section">
-                    <h4>📹 Zoom Meeting</h4>
+                    <h4><i class="fas fa-video"></i> Zoom Meeting</h4>
                     <div class="meeting-id">Meeting ID: 997 9432 0405</div>
                 </div>
                 
                 <div class="instructions">
-                    <h4>📋 คำแนะนำ</h4>
+                    <h4><i class="fas fa-clipboard-list"></i> คำแนะนำ</h4>
                     <p>ครั้งนี้จะมีการชีแจงรายละเอียดต่าง ๆ ของหลักสูตร โดยเฉพาะเรื่องของสิทธิ์การเข้าถึงสิ่งต่าง ๆ เช่น เนื้อหา บริการออนไลน์ และการออกใบรับรอง สิทธิ์การเข้าเรียนหลักสูตรเข้มหลังจากนี้</p>
                     <p>เมื่อเข้ามาใน Zoom แล้วให้เปลี่ยนชื่อเป็นชื่อจริง-รหัสบัตรประชาชน 4 ตัวหลัง เช่น</p>
                     <div class="example">Nitikorn-1234</div>
                 </div>
                 
                 <div class="view-course">
-                    <span class="view-course-btn">ดูรายละเอียดหลักสูตร</span>
+                    <span class="view-course-btn"><i class="fas fa-eye"></i> ดูรายละเอียดหลักสูตร</span>
                 </div>
             </a>
         </div>
