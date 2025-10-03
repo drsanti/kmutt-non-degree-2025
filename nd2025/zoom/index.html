@@ -26,20 +26,15 @@
             margin: 0 auto;
         }
         
-        h1 {
-            text-align: center;
-            color: white;
-            margin-bottom: 3rem;
-            font-size: 2.5rem;
-            font-weight: 300;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
         
         .cards-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            display: flex;
+            flex-direction: column;
             gap: 2rem;
             margin-bottom: 2rem;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .card {
@@ -192,7 +187,6 @@
         
         @media (max-width: 768px) {
             .cards-container {
-                grid-template-columns: 1fr;
                 gap: 1.5rem;
             }
             
@@ -200,10 +194,6 @@
                 padding: 1.5rem;
             }
             
-            h1 {
-                font-size: 2rem;
-                margin-bottom: 2rem;
-            }
             
             body {
                 padding: 1rem;
@@ -213,8 +203,6 @@
 </head>
 <body>
     <div class="container">
-        <h1>🎓 ND2025 Course Information</h1>
-        
         <div class="cards-container">
             <!-- Card 1: ND01 -->
             <a href="nd1-link.html" class="card">
