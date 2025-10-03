@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ND2025 - Table of Contents</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15), 0 10px 20px rgba(0,0,0,0.1);
+            width: 30%;
+            max-width: 50%;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.2), 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+        
+        .toc {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .toc li {
+            margin: 1rem 0;
+        }
+        
+        .toc a {
+            display: block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        
+        .toc a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        }
+        
+        .description {
+            margin-top: 2rem;
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ND2025 Course Materials</h1>
+        <ul class="toc">
+            <li>
+                <a href="nd2025/nd01/index.html">
+                    ND01 - Industrial Internet-of-Things Device Developer
+                </a>
+            </li>
+            <li>
+                <a href="nd2025/nd02/index.html">
+                    ND02 - Full-Stack Software Developer for Industrial Automation
+                </a>
+            </li>
+        </ul>
+        <p class="description">
+            Select a course to view the interactive presentations and learning materials.
+        </p>
+    </div>
+</body>
+</html>
