@@ -20,181 +20,94 @@
             min-height: 100vh;
             padding: 2rem;
             color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .container {
-            max-width: 1200px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 600px;
             margin: 0 auto;
         }
         
-        
-        .cards-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-bottom: 2rem;
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .card {
+        .course-button {
             background: white;
             border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            padding: 1.5rem 2rem;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
             transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
             text-decoration: none;
             color: inherit;
-            display: block;
-        }
-        
-        .card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #667eea, #764ba2);
-        }
-        
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-        }
-        
-        .card-header {
             display: flex;
             align-items: center;
-            margin-bottom: 1.5rem;
+            gap: 1.5rem;
+            border: 2px solid transparent;
         }
         
-        .card-icon {
+        .course-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+            border-color: #667eea;
+        }
+        
+        .button-icon {
             font-size: 2.5rem;
-            margin-right: 1rem;
+            color: #667eea;
+            flex-shrink: 0;
         }
         
-        .card-title {
-            font-size: 1.3rem;
-            font-weight: 600;
+        .button-content {
+            flex: 1;
+        }
+        
+        .button-title {
+            font-size: 1.5rem;
+            font-weight: 700;
             color: #2c3e50;
-            line-height: 1.3;
-        }
-        
-        .card-info {
-            margin-bottom: 1.5rem;
-        }
-        
-        .info-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 0.8rem;
-            font-size: 1rem;
-        }
-        
-        .info-icon {
-            margin-right: 0.8rem;
-            font-size: 1.2rem;
-            width: 20px;
-        }
-        
-        .zoom-section {
-            background: #f8f9fa;
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-left: 4px solid #667eea;
-        }
-        
-        .zoom-link {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-decoration: none;
-            padding: 0.8rem 1.5rem;
-            border-radius: 8px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            margin: 0.5rem 0;
-        }
-        
-        .zoom-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-        
-        .meeting-id {
-            background: #e9ecef;
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
-            font-family: "Courier New", monospace;
-            font-weight: 600;
-            margin: 0.5rem 0;
-            display: inline-block;
-        }
-        
-        .instructions {
-            background: #fff3cd;
-            border: 1px solid #ffeaa7;
-            border-radius: 8px;
-            padding: 1rem;
-            margin-top: 1rem;
-        }
-        
-        .instructions h4 {
-            color: #856404;
             margin-bottom: 0.5rem;
         }
         
-        .instructions p {
-            color: #856404;
-            font-size: 0.9rem;
+        .button-subtitle {
+            font-size: 1rem;
+            color: #666;
             line-height: 1.4;
         }
         
-        .example {
-            background: #d1ecf1;
-            border: 1px solid #bee5eb;
-            border-radius: 6px;
-            padding: 0.5rem 1rem;
-            margin-top: 0.5rem;
-            font-family: "Courier New", monospace;
-            color: #0c5460;
-        }
         
-        .view-course {
-            text-align: center;
-            margin-top: 1.5rem;
-        }
-        
-        .view-course-btn {
-            display: inline-block;
-            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
-            color: white;
-            text-decoration: none;
-            padding: 0.8rem 2rem;
-            border-radius: 8px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        
-        .view-course-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
         
         @media (max-width: 768px) {
-            .cards-container {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-                max-width: 500px;
+            .buttons-container {
+                gap: 1rem;
+                max-width: 100%;
+                padding: 0 1rem;
             }
             
-            .card {
-                padding: 1.5rem;
+            .course-button {
+                padding: 1.2rem 1.5rem;
+                gap: 1rem;
+            }
+            
+            .button-icon {
+                font-size: 2rem;
+            }
+            
+            .button-title {
+                font-size: 1.3rem;
+            }
+            
+            .button-subtitle {
+                font-size: 0.9rem;
             }
             
             body {
@@ -205,121 +118,28 @@
 </head>
 <body>
     <div class="container">
-        <div class="cards-container">
-            <!-- Card 1: ND01 -->
-            <a href="nd1-link.html" class="card">
-                <div class="card-header">
-                    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="card-title">ND01: Industrial Internet-of-Things Device Developer for Automation Systems</div>
-                </div>
-                
-                <div class="card-info">
-                    <div class="info-item">
-                        <span class="info-icon"><i class="fas fa-calendar-alt"></i></span>
-                        <span>วันเสาร์ที่ 4 ตุลาคม 2568</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-icon"><i class="fas fa-clock"></i></span>
-                        <span>เวลา 09:00 น.</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-icon"><i class="fas fa-laptop"></i></span>
-                        <span>เรียนออนไลน์</span>
-                    </div>
-                </div>
-                
-                <div class="zoom-section">
-                    <h4><i class="fas fa-video"></i> Zoom Meeting</h4>
-                    <div class="meeting-id">Meeting ID: 944 1677 7704</div>
-                </div>
-                
-                <div class="instructions">
-                    <h4><i class="fas fa-clipboard-list"></i> คำแนะนำ</h4>
-                    <p>ครั้งนี้จะมีการชีแจงรายละเอียดต่าง ๆ ของหลักสูตร โดยเฉพาะเรื่องของสิทธิ์การเข้าถึงสิ่งต่าง ๆ เช่น เนื้อหา บริการออนไลน์ และการออกใบรับรอง สิทธิ์การเข้าเรียนหลักสูตรเข้มหลังจากนี้</p>
-                    <p>เมื่อเข้ามาใน Zoom แล้วให้เปลี่ยนชื่อเป็นชื่อจริง-รหัสบัตรประชาชน 4 ตัวหลัง เช่น</p>
-                    <div class="example">Nitikorn-1234</div>
-                </div>
-                
-                <div class="view-course">
-                    <span class="view-course-btn"><i class="fas fa-eye"></i> ดูรายละเอียดหลักสูตร</span>
+        <div class="buttons-container">
+            <a href="nd1-link.html" class="course-button">
+                <div class="button-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="button-content">
+                    <div class="button-title">ND01</div>
+                    <div class="button-subtitle">Industrial Internet-of-Things Device Developer</div>
                 </div>
             </a>
             
-            <!-- Card 2: ND02 -->
-            <a href="nd2-link.html" class="card">
-                <div class="card-header">
-                    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="card-title">ND02: Full-Stack Software Developer for Industrial Automation Systems</div>
-                </div>
-                
-                <div class="card-info">
-                    <div class="info-item">
-                        <span class="info-icon"><i class="fas fa-calendar-alt"></i></span>
-                        <span>วันเสาร์ที่ 4 ตุลาคม 2568</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-icon"><i class="fas fa-clock"></i></span>
-                        <span>เวลา 13:00 น.</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-icon"><i class="fas fa-laptop"></i></span>
-                        <span>เรียนออนไลน์</span>
-                    </div>
-                </div>
-                
-                <div class="zoom-section">
-                    <h4><i class="fas fa-video"></i> Zoom Meeting</h4>
-                    <div class="meeting-id">Meeting ID: 937 5562 5071</div>
-                </div>
-                
-                <div class="instructions">
-                    <h4><i class="fas fa-clipboard-list"></i> คำแนะนำ</h4>
-                    <p>ครั้งนี้จะมีการชีแจงรายละเอียดต่าง ๆ ของหลักสูตร โดยเฉพาะเรื่องของสิทธิ์การเข้าถึงสิ่งต่าง ๆ เช่น เนื้อหา บริการออนไลน์ และการออกใบรับรอง สิทธิ์การเข้าเรียนหลักสูตรเข้มหลังจากนี้</p>
-                    <p>เมื่อเข้ามาใน Zoom แล้วให้เปลี่ยนชื่อเป็นชื่อจริง-รหัสบัตรประชาชน 4 ตัวหลัง เช่น</p>
-                    <div class="example">Nitikorn-1234</div>
-                </div>
-                
-                <div class="view-course">
-                    <span class="view-course-btn"><i class="fas fa-eye"></i> ดูรายละเอียดหลักสูตร</span>
+            <a href="nd2-link.html" class="course-button">
+                <div class="button-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="button-content">
+                    <div class="button-title">ND02</div>
+                    <div class="button-subtitle">Full-Stack Software Developer for Industrial Automation</div>
                 </div>
             </a>
             
-            <!-- Card 3: ND03 -->
-            <a href="nd3-link.html" class="card">
-                <div class="card-header">
-                    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="card-title">ND03: Modern Systems Developer Specializing in Digital Twins and OPC-UA</div>
-                </div>
-                
-                <div class="card-info">
-                    <div class="info-item">
-                        <span class="info-icon"><i class="fas fa-calendar-alt"></i></span>
-                        <span>วันอาทิตย์ที่ 5 ตุลาคม 2568</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-icon"><i class="fas fa-clock"></i></span>
-                        <span>เวลา 09:00 น.</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-icon"><i class="fas fa-laptop"></i></span>
-                        <span>เรียนออนไลน์</span>
-                    </div>
-                </div>
-                
-                <div class="zoom-section">
-                    <h4><i class="fas fa-video"></i> Zoom Meeting</h4>
-                    <div class="meeting-id">Meeting ID: 997 9432 0405</div>
-                </div>
-                
-                <div class="instructions">
-                    <h4><i class="fas fa-clipboard-list"></i> คำแนะนำ</h4>
-                    <p>ครั้งนี้จะมีการชีแจงรายละเอียดต่าง ๆ ของหลักสูตร โดยเฉพาะเรื่องของสิทธิ์การเข้าถึงสิ่งต่าง ๆ เช่น เนื้อหา บริการออนไลน์ และการออกใบรับรอง สิทธิ์การเข้าเรียนหลักสูตรเข้มหลังจากนี้</p>
-                    <p>เมื่อเข้ามาใน Zoom แล้วให้เปลี่ยนชื่อเป็นชื่อจริง-รหัสบัตรประชาชน 4 ตัวหลัง เช่น</p>
-                    <div class="example">Nitikorn-1234</div>
-                </div>
-                
-                <div class="view-course">
-                    <span class="view-course-btn"><i class="fas fa-eye"></i> ดูรายละเอียดหลักสูตร</span>
+            <a href="nd3-link.html" class="course-button">
+                <div class="button-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="button-content">
+                    <div class="button-title">ND03</div>
+                    <div class="button-subtitle">Modern Systems Developer Specializing in Digital Twins and OPC-UA</div>
                 </div>
             </a>
         </div>
