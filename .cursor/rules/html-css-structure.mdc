@@ -1,0 +1,61 @@
+---
+globs: *.html,*.css
+description: HTML and CSS structure and styling guidelines
+---
+
+# HTML/CSS Structure and Styling Rules
+
+## HTML Structure Standards
+Follow the established patterns from [index.html](mdc:index.html) and course pages:
+
+### Page Structure
+- Use semantic HTML5 structure with proper meta tags
+- Include responsive viewport meta tag
+- Use consistent title naming: `[Course]-[Module]-[Day]-[Description]`
+
+### Loading and Presentation Integration
+- Include loading spinner with fade-in effects for embedded content
+- Use iframe for Gamma presentations with proper sandbox attributes
+- Implement responsive design with mobile-first approach
+
+### CSS Guidelines
+- Use CSS custom properties for consistent theming
+- Follow the established color scheme: `#667eea` to `#764ba2` gradient
+- Implement smooth transitions and hover effects
+- Use flexbox and grid for layout
+
+### Responsive Design
+- Mobile-first approach with breakpoints at 768px and 480px
+- Use `100vh` and `100dvh` for proper mobile viewport handling
+- Ensure touch-friendly interface elements
+
+### Performance Considerations
+- Use `loading="lazy"` for iframes
+- Implement proper loading states
+- Optimize animations for smooth performance
+
+### Accessibility
+- Include proper ARIA labels and titles
+- Ensure keyboard navigation support
+- Maintain sufficient color contrast ratios
+
+## Code Examples
+```css
+/* Standard loading spinner */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Responsive iframe */
+iframe {
+  width: 100%;
+  height: 100vh;
+  height: 100dvh; /* Dynamic viewport height for mobile */
+  border: none;
+}
+```

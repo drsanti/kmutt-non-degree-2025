@@ -1,0 +1,53 @@
+---
+globs: *.sh,*.md
+description: Deployment and git workflow guidelines
+---
+
+# Deployment and Git Workflow Rules
+
+## Deployment Process
+Follow the established deployment workflow using [deploy.sh](mdc:deploy.sh):
+
+### Git Workflow
+- Use the provided `deploy.sh` script for consistent deployments
+- Default commit message: "add slides" (customizable)
+- Always check git status before committing
+- Push to remote repository after successful commit
+
+### Deployment Script Usage
+```bash
+# Standard deployment
+./deploy.sh
+
+# Custom commit message
+./deploy.sh "update course content"
+```
+
+### GitHub Pages Integration
+- Repository is configured for GitHub Pages deployment
+- Main entry point: [index.html](mdc:index.html)
+- Course materials are served from the repository root
+- Live site: https://drsanti.github.io/kmutt-non-degree-2025/
+
+### File Management
+- Keep deployment documentation in [DEPLOY.md](mdc:DEPLOY.md)
+- Maintain consistent file structure for proper serving
+- Ensure all relative links work correctly after deployment
+
+### Pre-deployment Checks
+- Verify all course links are functional
+- Test responsive design on multiple devices
+- Check that Gamma presentations load correctly
+- Validate HTML and CSS syntax
+
+### Version Control Best Practices
+- Use descriptive commit messages
+- Commit related changes together
+- Test locally before pushing to remote
+- Keep the repository clean and organized
+
+## Troubleshooting
+- Check git status for uncommitted changes
+- Verify remote repository configuration
+- Ensure proper file permissions for scripts
+- Test deployment in a clean environment
