@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2" pages="4">
   <diagram name="Page-1" id="XZcJlRqIM7Ble-OiMkny">
-    <mxGraphModel dx="8608" dy="5152" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2814" dy="1798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -306,6 +306,18 @@
         </mxCell>
         <mxCell id="Rdtr1JbjE306_ljO7pi9-91" value="&lt;li class=&quot;whitespace-normal break-words&quot;&gt;&lt;strong&gt;Conduit 1:&lt;/strong&gt; Internet Access&lt;/li&gt;&lt;br&gt;&lt;li class=&quot;whitespace-normal break-words&quot;&gt;&lt;strong&gt;Conduit 2:&lt;/strong&gt; Remote VPN Access&lt;/li&gt;&lt;br&gt;&lt;li class=&quot;whitespace-normal break-words&quot;&gt;&lt;strong&gt;Conduit 3:&lt;/strong&gt; Enterprise Network (internal)&lt;/li&gt;&lt;br&gt;&lt;li class=&quot;whitespace-normal break-words&quot;&gt;&lt;strong&gt;Conduit 4:&lt;/strong&gt; Enterprise Zone → DMZ&lt;/li&gt;&lt;br&gt;&lt;li class=&quot;whitespace-normal break-words&quot;&gt;&lt;strong&gt;Conduit 5:&lt;/strong&gt; DMZ → Manufacturing Zone&lt;/li&gt;&lt;br&gt;&lt;li class=&quot;whitespace-normal break-words&quot;&gt;&lt;strong&gt;Conduit 6:&lt;/strong&gt; Manufacturing → Cell/Area Zone&lt;/li&gt;&lt;br&gt;&lt;li class=&quot;whitespace-normal break-words&quot;&gt;&lt;strong&gt;Conduit 7:&lt;/strong&gt; Cell/Area → Process Zone&lt;/li&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;" vertex="1" parent="zkV6eAk7qHjJs4rU3PGN-4">
           <mxGeometry x="90" y="140" width="260" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="zkV6eAk7qHjJs4rU3PGN-5" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;autosize=1;resizable=0;" edge="1" parent="zkV6eAk7qHjJs4rU3PGN-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-60" y="1520" as="sourcePoint" />
+            <mxPoint x="1180" y="1520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zkV6eAk7qHjJs4rU3PGN-6" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;autosize=1;resizable=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="920" y="725" as="sourcePoint" />
+            <mxPoint x="-320" y="738" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
