@@ -1,3 +1,8 @@
+## 📍 Navigation
+
+**[Section 1: API Integration & Validation](./section1.md)** | **[Section 2: Advanced Type Patterns](./section2.md)** | **[Section 3: Production Optimization](./section3.md)** | **[Home](./README.md)**
+
+---
 
 ## **Section 1: Type-Safe API Integration and Data Validation**
 
@@ -168,5 +173,11 @@ function updateUser(id: number, data: UserUpdate) {
 
 **Use Case:**
 Useful for PATCH requests or UI forms where not all fields are provided.
+
+---
+
+## 📍 Navigation
+
+**[Section 1: API Integration & Validation](./section1.md)** | **[Section 2: Advanced Type Patterns](./section2.md)** | **[Section 3: Production Optimization](./section3.md)** | **[Home](./README.md)**
 
 ---

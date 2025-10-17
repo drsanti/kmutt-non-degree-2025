@@ -1,3 +1,8 @@
+## 📍 Navigation
+
+**[Section 1: API Integration & Validation](./section1.md)** | **[Section 2: Advanced Type Patterns](./section2.md)** | **[Section 3: Production Optimization](./section3.md)** | **[Home](./README.md)**
+
+---
 
 ## **Section 3: TypeScript Build and Runtime Optimization for Production**
 
@@ -224,5 +229,11 @@ Integrate type checks and tests into the deployment pipeline.
 
 **Use Case:**
 Guarantees no type errors reach production, enforcing reliability at the pipeline level.
+
+---
+
+## 📍 Navigation
+
+**[Section 1: API Integration & Validation](./section1.md)** | **[Section 2: Advanced Type Patterns](./section2.md)** | **[Section 3: Production Optimization](./section3.md)** | **[Home](./README.md)**
 
 ---

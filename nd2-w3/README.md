@@ -4,6 +4,12 @@ A comprehensive guide to mastering TypeScript for building scalable, type-safe w
 
 ---
 
+## 📍 Navigation
+
+**[Section 1: API Integration & Validation](./section1.md)** | **[Section 2: Advanced Type Patterns](./section2.md)** | **[Section 3: Production Optimization](./section3.md)** | **[Home](./README.md)**
+
+---
+
 ## Table of Contents
 
 ### [Section 1: Type-Safe API Integration and Data Validation](./section1.md)
@@ -61,4 +67,10 @@ This course is designed for developers who want to leverage TypeScript's full ca
 - **Section 1** focuses on practical type safety for API integration
 - **Section 2** explores advanced patterns for scalable architecture
 - **Section 3** covers build configuration and deployment best practices
+
+---
+
+## 📍 Navigation
+
+**[Section 1: API Integration & Validation](./section1.md)** | **[Section 2: Advanced Type Patterns](./section2.md)** | **[Section 3: Production Optimization](./section3.md)** | **[Home](./README.md)**
 

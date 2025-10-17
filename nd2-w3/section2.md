@@ -1,7 +1,12 @@
+## 📍 Navigation
+
+**[Section 1: API Integration & Validation](./section1.md)** | **[Section 2: Advanced Type Patterns](./section2.md)** | **[Section 3: Production Optimization](./section3.md)** | **[Home](./README.md)**
+
+---
 
 ## **Section 2: Advanced Type System Patterns for Scalability**
 
-These topics teach juniors how to use TypeScript’s **powerful type system** to manage complexity in large projects — ensuring code remains safe, maintainable, and self-documenting.
+These topics teach juniors how to use TypeScript's **powerful type system** to manage complexity in large projects — ensuring code remains safe, maintainable, and self-documenting.
 
 ---
 
@@ -169,5 +174,11 @@ const badRoute: Route = "/users";  // ❌ Type error
 
 **Use Case:**
 Enforce consistent naming or endpoint formats without writing manual checks.
+
+---
+
+## 📍 Navigation
+
+**[Section 1: API Integration & Validation](./section1.md)** | **[Section 2: Advanced Type Patterns](./section2.md)** | **[Section 3: Production Optimization](./section3.md)** | **[Home](./README.md)**
 
 ---
