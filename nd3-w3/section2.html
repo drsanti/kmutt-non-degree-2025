@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Section 2: Cybersecurity and System Reliability</title>
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="vscode-body vscode-light">
+  <div class="navigation">
+    <p><strong><a href="./section1.html">Section 1: Real-Time Data Integration &amp; Synchronization</a></strong> |
+      <strong><a href="./section2.html">Section 2: Cybersecurity &amp; System Reliability</a></strong> | <strong><a
+          href="./section3.html">Section 3: Edge Computing &amp; Intelligent Automation</a></strong> | <strong><a
+          href="./README.html">Home</a></strong></p>
+  </div>
+
+  <h2 id="section-2-cybersecurity-and-system-reliability"><strong>Section 2: Cybersecurity and System
+      Reliability</strong></h2>
+  <hr>
+  <h3 id="topic-1-foundations-of-industrial-cybersecurity"><strong>Topic 1: Foundations of Industrial
+      Cybersecurity</strong></h3>
+  <p><strong>Purpose:</strong>
+    To understand the principles and frameworks that secure automation systems integrating computer and embedded
+    devices.</p>
+  <p><strong>Key Concepts:</strong></p>
+  <ul>
+    <li>Increasing connectivity (IoT, cloud) expands the <strong>attack surface</strong>.</li>
+    <li>Security must be layered — from hardware to software and networks.</li>
+    <li>Compliance standards: IEC 62443, ISO 27001, NIST SP 800-82.</li>
+  </ul>
+  <p><strong>Subtopics:</strong></p>
+  <ol>
+    <li>
+      <p><strong>Security by Design</strong></p>
+      <ul>
+        <li>Integrate security from system concept, not as an afterthought.</li>
+        <li>Example: choosing microcontrollers with hardware crypto accelerators.</li>
+      </ul>
+    </li>
+    <li>
+      <p><strong>Defense in Depth Strategy</strong></p>
+      <ul>
+        <li>Multi-layer protection — physical, network, application, human.</li>
+        <li>Example: password-protected HMI + segmented control network + VPN for remote access.</li>
+      </ul>
+    </li>
+    <li>
+      <p><strong>Standards and Compliance</strong></p>
+      <ul>
+        <li>IEC 62443 defines security zones, conduits, and maturity levels.</li>
+        <li>ISO 27001 focuses on organizational information-security management.</li>
+      </ul>
+    </li>
+  </ol>
+  <hr>
+  <h3 id="topic-2-secure-communication-and-data-protection"><strong>Topic 2: Secure Communication and Data
+      Protection</strong></h3>
+  <p><strong>Purpose:</strong>
+    To protect data integrity, confidentiality, and authenticity between embedded devices and computer systems.</p>
+  <p><strong>Key Concepts:</strong></p>
+  <ul>
+    <li>Use <strong>encryption</strong>, <strong>authentication</strong>, and <strong>authorization</strong> mechanisms.
+    </li>
+    <li>Secure both <strong>data-in-transit</strong> and <strong>data-at-rest</strong>.</li>
+    <li>Replace legacy unencrypted protocols with secure versions.</li>
+  </ul>
+  <p><strong>Subtopics:</strong></p>
+  <ol>
+    <li>
+      <p><strong>TLS and SSL Encryption</strong></p>
+      <ul>
+        <li>Enables secure data exchange over Ethernet/IP.</li>
+        <li>Example: SCADA ↔ PLC communication using TLS 1.3 certificates.</li>
+      </ul>
+    </li>
+    <li>
+      <p><strong>Certificate and Key Management</strong></p>
+      <ul>
+        <li>Use X.509 certificates and centralized Public Key Infrastructure (PKI).</li>
+        <li>Rotate keys and revoke compromised ones regularly.</li>
+      </ul>
+    </li>
+    <li>
+      <p><strong>VPN and Network Isolation</strong></p>
+      <ul>
+        <li>Isolate control networks from corporate IT via VPN tunnels or DMZs.</li>
+        <li>Example: remote maintenance access only through authenticated VPN.</li>
+      </ul>
+    </li>
+    <li>
+      <p><strong>Practical Example</strong></p>
+      <ul>
+        <li>Embedded controller signs all telemetry packets.</li>
+        <li>Central server validates signatures before logging process data.</li>
+      </ul>
+    </li>
+  </ol>
+  <hr>
+  <h3 id="topic-3-device-hardening-and-firmware-integrity"><strong>Topic 3: Device Hardening and Firmware
+      Integrity</strong></h3>
+  <p><strong>Purpose:</strong>
+    To ensure embedded devices are resilient against tampering, malware, or unauthorized modification.</p>
+  <p><strong>Key Concepts:</strong></p>
+  <ul>
+    <li>Restrict access, validate firmware, and disable unnecessary services.</li>
+    <li>Adopt <strong>secure-boot</strong> and <strong>code-signing</strong> practices.</li>
+  </ul>
+  <p><strong>Subtopics:</strong></p>
+  <ol>
+    <li>
+      <p><strong>Secure Boot Mechanisms</strong></p>
+      <ul>
+        <li>Device verifies firmware signature before execution.</li>
+        <li>Example: Microcontroller checks SHA-256 hash signed with OEM private key.</li>
+      </ul>
+    </li>
+    <li>
+      <p><strong>Firmware Update Security</strong></p>
+      <ul>
+        <li>Use encrypted and signed update packages.</li>
+        <li>Example: Over-the-air (OTA) update fails if signature mismatch is detected.</li>
+      </ul>
+    </li>
+    <li>
+      <p><strong>Hardware Security Modules (HSM / TPM)</strong></p>
+      <ul>
+        <li>Embedded cryptographic chips store keys and perform secure operations.</li>
+        <li>Example: Trusted Platform Module authenticates device identity at startup.</li>
+      </ul>
+    </li>
+    <li>
+      <p><strong>Practical Example</strong></p>
+      <ul>
+        <li>Field devices only accept firmware updates signed by the manufacturer's CA.</li>
+        <li>Unauthorized binaries are rejected automatically.</li>
+      </ul>
+    </li>
+  </ol>
+  <hr>
+  <h3 id="topic-4-network-security-and-segmentation"><strong>Topic 4: Network Security and Segmentation</strong></h3>
+  <p><strong>Purpose:</strong>
+    To prevent lateral movement of threats and contain incidents within defined boundaries.</p>
+  <p><strong>Key Concepts:</strong></p>
+  <ul>
+    <li>Divide the industrial network into <strong>zones</strong> and <strong>conduits</strong>.</li>
+    <li>Apply <strong>least-privilege</strong> communication rules.</li>
+  </ul>
+  <p><strong>Subtopics:</strong></p>
+  <ol>
+    <li>
+      <p><strong>Network Segmentation with Firewalls</strong></p>
+      <ul>
+        <li>Separate control LAN from enterprise LAN using industrial firewalls.</li>
+        <li>Example: Process Control Zone (PLCs) ↔ Supervisory Zone (SCADA) via managed firewall.</li>
+      </ul>
+    </li>
+    <li>
+      <p><strong>Intrusion Detection and Monitoring (IDS / IPS)</strong></p>
+      <ul>
+        <li>Detect abnormal traffic or unauthorized devices.</li>
+        <li>Example: Snort or Zeek detects unusual Modbus traffic patterns.</li>
+      </ul>
+    </li>
+    <li>
+      <p><strong>Whitelisting and Access Control Lists</strong></p>
+      <ul>
+        <li>Allow only pre-approved IP addresses and ports.</li>
+        <li>Example: PLC communicates only with SCADA server 192.168.10.5.</li>
+      </ul>
+    </li>
+    <li>
+      <p><strong>Case Study</strong></p>
+      <ul>
+        <li>A manufacturing plant deployed VLANs for each production cell.</li>
+        <li>A detected malware outbreak was contained to one zone without downtime.</li>
+      </ul>
+    </li>
+  </ol>
+  <hr>
+  <h3 id="topic-5-system-reliability-and-fault-tolerance"><strong>Topic 5: System Reliability and Fault
+      Tolerance</strong></h3>
+  <p><strong>Purpose:</strong>
+    To maintain operational continuity even under cyberattack, hardware failure, or network issues.</p>
+  <p><strong>Key Concepts:</strong></p>
+  <ul>
+    <li>Reliability complements security — resilience reduces downtime.</li>
+    <li>Use redundancy, watchdogs, and error-recovery mechanisms.</li>
+  </ul>
+  <p><strong>Subtopics:</strong></p>
+  <ol>
+    <li>
+      <p><strong>Redundant Architecture Design</strong></p>
+      <ul>
+        <li>Hot standby PLCs, dual power supplies, mirrored databases.</li>
+        <li>Example: If primary controller fails, backup takes over in &lt; 1 second.</li>
+      </ul>
+    </li>
+    <li>
+      <p><strong>Watchdog and Fail-Safe Mechanisms</strong></p>
+      <ul>
+        <li>Detect stalled code or loss of communication and trigger safe state.</li>
+        <li>Example: Actuator moves to neutral position on signal timeout.</li>
+      </ul>
+    </li>
+    <li>
+      <p><strong>Data Backup and Disaster Recovery</strong></p>
+      <ul>
+        <li>Automate secure backups of PLC programs and configurations.</li>
+        <li>Example: Nightly backups to isolated server via SFTP with version control.</li>
+      </ul>
+    </li>
+    <li>
+      <p><strong>Monitoring and Predictive Maintenance</strong></p>
+      <ul>
+        <li>Use AI or rule-based systems to detect anomalies before failure.</li>
+        <li>Example: Vibration threshold alerts trigger preemptive bearing replacement.</li>
+      </ul>
+    </li>
+  </ol>
+  <hr>
+  <h3 id="topic-6-incident-response-and-lifecycle-security"><strong>Topic 6: Incident Response and Lifecycle
+      Security</strong></h3>
+  <p><strong>Purpose:</strong>
+    To establish continuous protection through monitoring, response, and updates.</p>
+  <p><strong>Key Concepts:</strong></p>
+  <ul>
+    <li>Cybersecurity is an ongoing process — not a one-time setup.</li>
+    <li>Incident response plans ensure rapid containment and recovery.</li>
+  </ul>
+  <p><strong>Subtopics:</strong></p>
+  <ol>
+    <li>
+      <p><strong>Incident Detection and Reporting</strong></p>
+      <ul>
+        <li>Define SOCs (Security Operations Centers) and alert thresholds.</li>
+        <li>Example: Unauthorized firmware update triggers alert email to engineer.</li>
+      </ul>
+    </li>
+    <li>
+      <p><strong>Patch Management and Lifecycle Maintenance</strong></p>
+      <ul>
+        <li>Schedule secure firmware updates and system patches without interrupting production.</li>
+        <li>Example: Monthly maintenance window for PLC OS updates.</li>
+      </ul>
+    </li>
+    <li>
+      <p><strong>Post-Incident Review and Improvement</strong></p>
+      <ul>
+        <li>Analyze root cause and update security policies.</li>
+        <li>Example: After attack, engineers add multi-factor authentication to remote login.</li>
+      </ul>
+    </li>
+    <li>
+      <p><strong>Continuous Training and Awareness</strong></p>
+      <ul>
+        <li>Educate operators and engineers on phishing, malware, and best practices.</li>
+        <li>Example: Quarterly cyber-drills for control room staff.</li>
+      </ul>
+    </li>
+  </ol>
+  <hr>
+
+  <div class="navigation">
+    <p><strong><a href="./section1.html">Section 1: Real-Time Data Integration &amp; Synchronization</a></strong> |
+      <strong><a href="./section2.html">Section 2: Cybersecurity &amp; System Reliability</a></strong> | <strong><a
+          href="./section3.html">Section 3: Edge Computing &amp; Intelligent Automation</a></strong> | <strong><a
+          href="./README.html">Home</a></strong></p>
+  </div>
+</body>
+
+</html>
