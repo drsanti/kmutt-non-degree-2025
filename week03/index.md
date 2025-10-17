@@ -1,4 +1,4 @@
-# Week 03 - Hardware Design Principles
+# Week 03 - PCB/Hardware Design Principles
 
 ## 📚 Course Content
 
