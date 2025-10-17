@@ -10,13 +10,7 @@
     href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
-      font-size: 14px;
-      line-height: 1.6;
-    }
-  </style>
+  <link rel="stylesheet" id="theme-stylesheet" href="styles.css">
   <style>
     .task-list-item {
       list-style-type: none;
@@ -125,6 +119,19 @@
 </head>
 
 <body class="vscode-body vscode-light">
+
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle" aria-label="Toggle theme">⚫</button>
+
+  <!-- Navigation -->
+  <nav style="background-color: #f5f5f5; padding: 10px; margin-bottom: 20px; border-radius: 5px;">
+    <strong>Navigation:</strong>
+    <a href="ch01.html" style="margin: 0 10px;">Chapter 1: Reliability & Compliance</a> |
+    <a href="ch02.html" style="margin: 0 10px;">Chapter 2: Testability & Production</a> |
+    <a href="ch03.html" style="margin: 0 10px;">Chapter 3: Embedded System Integration</a> |
+    <a href="index.html" style="margin: 0 10px;">Home</a>
+  </nav>
+
   <h1 id="week-03---pcbhardware-design-principles">Week 03 - PCB/Hardware Design Principles</h1>
   <h2 id="-course-content">📚 Course Content</h2>
   <p>This week covers advanced hardware design principles focusing on reliability, testability, production, and embedded
@@ -174,7 +181,16 @@
   </ul>
   <hr>
 
+  <!-- Navigation -->
+  <nav style="background-color: #f5f5f5; padding: 10px; margin-top: 20px; border-radius: 5px;">
+    <strong>Navigation:</strong>
+    <a href="ch01.html" style="margin: 0 10px;">Chapter 1: Reliability & Compliance</a> |
+    <a href="ch02.html" style="margin: 0 10px;">Chapter 2: Testability & Production</a> |
+    <a href="ch03.html" style="margin: 0 10px;">Chapter 3: Embedded System Integration</a> |
+    <a href="index.html" style="margin: 0 10px;">Home</a>
+  </nav>
 
+  <script src="theme-switcher.js"></script>
 
 </body>
 

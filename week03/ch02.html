@@ -8,18 +8,12 @@
     &lpar;DFT &plus; DFM Integration&rpar;&ast;&ast;
   </title>
 
+
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css" />
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css" />
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI",
-        system-ui, "Ubuntu", "Droid Sans", sans-serif;
-      font-size: 14px;
-      line-height: 1.6;
-    }
-  </style>
+  <link rel="stylesheet" id="theme-stylesheet" href="styles.css" />
   <style>
     .task-list-item {
       list-style-type: none;
@@ -129,10 +123,37 @@
 <body class="vscode-body vscode-light">
   <span id="mermaid" aria-hidden="true" data-dark-mode-theme="redux-dark" data-light-mode-theme="redux"
     data-max-text-size="undefined"></span>
+
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle" aria-label="Toggle theme">⚫</button>
+
+  <!-- Navigation -->
+  <nav style="background-color: #f5f5f5; padding: 10px; margin-bottom: 20px; border-radius: 5px;">
+    <strong>Navigation:</strong>
+    <a href="ch01.html" style="margin: 0 10px;">Chapter 1: Reliability & Compliance</a> |
+    <a href="ch02.html" style="margin: 0 10px;">Chapter 2: Testability & Production</a> |
+    <a href="ch03.html" style="margin: 0 10px;">Chapter 3: Embedded System Integration</a> |
+    <a href="index.html" style="margin: 0 10px;">Home</a>
+  </nav>
+
   <h2 id="️-design-for-testability--production-dft--dfm-integration">
     ⚙️
     <strong>Design for Testability &amp; Production (DFT + DFM Integration)</strong>
   </h2>
+
+  <!-- Table of Contents -->
+  <div style="background-color: #f9f9f9; padding: 15px; margin: 20px 0; border-left: 4px solid #0969da;">
+    <h3 style="margin-top: 0;">📑 Table of Contents</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li>📍 <a href="#designing-for-manufacturability-dfm-principles">Designing for Manufacturability (DFM
+          Principles)</a></li>
+      <li>📍 <a href="#designing-for-testability-dft-principles">Designing for Testability (DFT Principles)</a></li>
+      <li>📍 <a href="#assembly-and-process-control">Assembly and Process Control</a></li>
+      <li>📍 <a href="#design-for-assembly-dfa">Design for Assembly (DFA)</a></li>
+      <li>📍 <a href="#quality-assurance--yield-optimization">Quality Assurance & Yield Optimization</a></li>
+    </ul>
+  </div>
+
   <hr />
   <h3 id="designing-for-manufacturability-dfm-principles">
     <strong>Designing for Manufacturability (DFM Principles)</strong>
@@ -463,9 +484,19 @@
   </p>
   <hr />
 
+  <!-- Navigation -->
+  <nav style="background-color: #f5f5f5; padding: 10px; margin-top: 20px; border-radius: 5px;">
+    <strong>Navigation:</strong>
+    <a href="ch01.html" style="margin: 0 10px;">Chapter 1: Reliability & Compliance</a> |
+    <a href="ch02.html" style="margin: 0 10px;">Chapter 2: Testability & Production</a> |
+    <a href="ch03.html" style="margin: 0 10px;">Chapter 3: Embedded System Integration</a> |
+    <a href="index.html" style="margin: 0 10px;">Home</a>
+  </nav>
+
   <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script src="theme-switcher.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,274 @@
+/* ============================================
+   Week 03 - Hardware Design Principles
+   Custom Stylesheet
+   ============================================ */
+
+/* Base Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI",
+    system-ui, "Ubuntu", "Droid Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ============================================
+   Heading Hierarchy
+   ============================================ */
+
+/* Main page heading (H1 - used on index.html) */
+h1 {
+  color: #1e3a8a;
+  background: linear-gradient(135deg, #dbeafe 0%, #eff6ff 100%);
+  padding: 25px;
+  border-left: 8px solid #2563eb;
+  border-radius: 10px;
+  margin: 30px 0;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+  text-align: center;
+}
+
+/* Main chapter heading (H2) */
+h2 {
+  color: #1e3a8a;
+  background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+  padding: 20px;
+  border-left: 6px solid #2563eb;
+  border-radius: 8px;
+  margin: 30px 0;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.1);
+}
+
+/* Main section headings (H3) */
+h3 {
+  color: #0c4a6e;
+  background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+  padding: 15px;
+  border-left: 5px solid #0ea5e9;
+  border-radius: 6px;
+  margin: 25px 0 15px 0;
+  box-shadow: 0 2px 6px rgba(14, 165, 233, 0.08);
+}
+
+/* Chapter links on index page */
+h3 a {
+  color: #065f46;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+h3 a:hover {
+  color: #10b981;
+  text-decoration: underline;
+}
+
+/* Subsection headings (H4) */
+h4 {
+  color: #065f46;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+  padding: 12px;
+  border-left: 4px solid #10b981;
+  border-radius: 5px;
+  margin: 20px 0 10px 0;
+  box-shadow: 0 1px 4px rgba(16, 185, 129, 0.08);
+}
+
+/* ============================================
+   Content Styling
+   ============================================ */
+
+/* Strong emphasis in content */
+strong {
+  color: #7c3aed;
+  font-weight: 600;
+}
+
+/* Example labels (first strong in paragraph) */
+p strong:first-child {
+  color: #dc2626;
+}
+
+/* Objective labels and key concepts */
+p:has(> strong:first-child) {
+  background: #fef3c7;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border-left: 3px solid #f59e0b;
+}
+
+/* Chapter description paragraphs on index page */
+h3 + p {
+  background: #f0fdf4;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border-left: 3px solid #10b981;
+  margin: 10px 0;
+}
+
+/* Lists with better spacing */
+ul,
+ol {
+  line-height: 1.8;
+}
+
+/* List items */
+ul li {
+  padding: 5px 0;
+  color: #374151;
+}
+
+/* Code and technical terms */
+code {
+  background: #f1f5f9;
+  color: #be185d;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+/* Blockquotes (Key Insights) */
+blockquote {
+  background: linear-gradient(135deg, #fef3c7 0%, #fffbeb 100%);
+  border-left: 4px solid #f59e0b;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(245, 158, 11, 0.1);
+}
+
+/* ============================================
+   Navigation Styles
+   ============================================ */
+
+nav {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav a {
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+
+/* ============================================
+   Table of Contents
+   ============================================ */
+
+.toc-container {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin: 20px 0;
+  border-left: 4px solid #0969da;
+}
+
+.toc-container h3 {
+  margin-top: 0;
+  background: none;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.toc-container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* ============================================
+   Theme Switcher Button
+   ============================================ */
+
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#theme-toggle:hover {
+  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.5);
+}
+
+#theme-toggle:active {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+/* ============================================
+   Utility Classes
+   ============================================ */
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+.margin-top {
+  margin-top: 20px;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 13px;
+  }
+
+  h1 {
+    padding: 20px;
+    font-size: 1.5em;
+  }
+
+  h2 {
+    padding: 15px;
+    font-size: 1.3em;
+  }
+
+  h3 {
+    padding: 12px;
+    font-size: 1.2em;
+  }
+
+  h4 {
+    padding: 10px;
+    font-size: 1.1em;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  #theme-toggle {
+    top: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+}

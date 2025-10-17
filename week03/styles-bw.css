@@ -1,0 +1,322 @@
+/* ============================================
+   Week 03 - Hardware Design Principles
+   Black & White Theme (Typography-Only Style)
+   ============================================ */
+
+/* Base Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI",
+    system-ui, "Ubuntu", "Droid Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #000;
+  background: #fff;
+}
+
+/* ============================================
+   Heading Hierarchy - Typography Only
+   ============================================ */
+
+/* Main page heading (H1) */
+h1 {
+  color: #000;
+  font-size: 2.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 40px 0 30px 0;
+  padding: 0;
+  background: none;
+  border: none;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+/* Main chapter heading (H2) */
+h2 {
+  color: #000;
+  font-size: 2em;
+  font-weight: 800;
+  margin: 40px 0 20px 0;
+  padding: 0;
+  background: none;
+  border: none;
+  letter-spacing: -0.01em;
+}
+
+/* Main section headings (H3) */
+h3 {
+  color: #000;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 30px 0 15px 0;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+/* Chapter links on index page */
+h3 a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+h3 a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Subsection headings (H4) */
+h4 {
+  color: #000;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 25px 0 10px 0;
+  padding: 0;
+  background: none;
+  border: none;
+  font-style: italic;
+}
+
+/* ============================================
+   Content Styling - Typography Focus
+   ============================================ */
+
+/* Paragraphs */
+p {
+  margin: 12px 0;
+  line-height: 1.7;
+}
+
+/* Strong emphasis in content */
+strong {
+  color: #000;
+  font-weight: 700;
+}
+
+/* Example labels (first strong in paragraph) */
+p strong:first-child {
+  color: #000;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
+}
+
+/* Remove decorative boxes */
+p:has(> strong:first-child) {
+  background: none;
+  padding: 0;
+  border: none;
+  margin: 15px 0;
+}
+
+/* Chapter description paragraphs on index page */
+h3 + p {
+  background: none;
+  padding: 0;
+  border: none;
+  margin: 10px 0 20px 0;
+  font-style: italic;
+}
+
+/* Lists with better spacing */
+ul,
+ol {
+  line-height: 1.8;
+  margin: 15px 0;
+}
+
+/* List items */
+ul li {
+  padding: 3px 0;
+  color: #000;
+}
+
+/* Code and technical terms */
+code {
+  background: none;
+  color: #000;
+  padding: 0;
+  border: none;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.95em;
+}
+
+/* Blockquotes (Key Insights) */
+blockquote {
+  background: none;
+  border: none;
+  border-left: 3px solid #000;
+  padding: 0 0 0 20px;
+  margin: 20px 0;
+  font-style: italic;
+  color: #000;
+}
+
+/* ============================================
+   Navigation Styles
+   ============================================ */
+
+nav {
+  background: none;
+  padding: 15px 0;
+  border: none;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  margin: 20px 0;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  transition: all 0.2s ease;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* ============================================
+   Table of Contents
+   ============================================ */
+
+.toc-container {
+  background: none;
+  padding: 0;
+  margin: 30px 0;
+  border: none;
+  border-left: 3px solid #000;
+  padding-left: 20px;
+}
+
+.toc-container h3 {
+  margin-top: 0;
+  background: none;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.toc-container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.toc-container ul li {
+  margin: 8px 0;
+}
+
+.toc-container ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.toc-container ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================
+   Theme Switcher Button
+   ============================================ */
+
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1000;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#theme-toggle:hover {
+  background: #000;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* ============================================
+   Utility Classes
+   ============================================ */
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+.margin-top {
+  margin-top: 20px;
+}
+
+/* ============================================
+   Horizontal Rules
+   ============================================ */
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 30px 0;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: 30px 0 20px 0;
+  }
+
+  h2 {
+    font-size: 1.7em;
+    margin: 30px 0 15px 0;
+  }
+
+  h3 {
+    font-size: 1.4em;
+    margin: 25px 0 12px 0;
+  }
+
+  h4 {
+    font-size: 1.15em;
+    margin: 20px 0 10px 0;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+
+  #theme-toggle {
+    top: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+}

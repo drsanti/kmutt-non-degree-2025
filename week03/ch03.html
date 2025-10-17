@@ -7,33 +7,13 @@
     &#x1f9e0; &ast;&ast;Embedded System Integration &amp; Firmware
     Co-Design&ast;&ast;
   </title>
-  <style>
-    /* From extension vscode.github */
-    /*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
 
-    .vscode-dark img[src$="\#gh-light-mode-only"],
-    .vscode-light img[src$="\#gh-dark-mode-only"],
-    .vscode-high-contrast:not(.vscode-high-contrast-light) img[src$="\#gh-light-mode-only"],
-    .vscode-high-contrast-light img[src$="\#gh-dark-mode-only"] {
-      display: none;
-    }
-  </style>
 
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css" />
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css" />
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI",
-        system-ui, "Ubuntu", "Droid Sans", sans-serif;
-      font-size: 14px;
-      line-height: 1.6;
-    }
-  </style>
+  <link rel="stylesheet" id="theme-stylesheet" href="styles.css" />
   <style>
     .task-list-item {
       list-style-type: none;
@@ -141,9 +121,38 @@
 </head>
 
 <body class="vscode-body vscode-light">
+
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle" aria-label="Toggle theme">⚫</button>
+
+  <!-- Navigation -->
+  <nav style="background-color: #f5f5f5; padding: 10px; margin-bottom: 20px; border-radius: 5px;">
+    <strong>Navigation:</strong>
+    <a href="ch01.html" style="margin: 0 10px;">Chapter 1: Reliability & Compliance</a> |
+    <a href="ch02.html" style="margin: 0 10px;">Chapter 2: Testability & Production</a> |
+    <a href="ch03.html" style="margin: 0 10px;">Chapter 3: Embedded System Integration</a> |
+    <a href="index.html" style="margin: 0 10px;">Home</a>
+  </nav>
+
   <h2 id="-embedded-system-integration--firmware-co-design">
     🧠 <strong>Embedded System Integration &amp; Firmware Co-Design</strong>
   </h2>
+
+  <!-- Table of Contents -->
+  <div style="background-color: #f9f9f9; padding: 15px; margin: 20px 0; border-left: 4px solid #0969da;">
+    <h3 style="margin-top: 0;">📑 Table of Contents</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li>📍 <a href="#hardwarefirmware-co-design-principles">Hardware–Firmware Co-Design Principles</a></li>
+      <li>📍 <a href="#power-management--system-efficiency">Power Management & System Efficiency</a></li>
+      <li>📍 <a href="#communication-interface-design">Communication Interface Design</a></li>
+      <li>📍 <a href="#embedded-software-integration-and-testing">Embedded Software Integration and Testing</a></li>
+      <li>📍 <a href="#system-safety-robustness--field-diagnostics">System Safety, Robustness & Field Diagnostics</a>
+      </li>
+      <li>📍 <a href="#system-validation-and-certification">System Validation and Certification</a></li>
+      <li>📍 <a href="#key-takeaways">Key Takeaways</a></li>
+    </ul>
+  </div>
+
   <hr />
   <h3 id="hardwarefirmware-co-design-principles">
     <strong>Hardware–Firmware Co-Design Principles</strong>
@@ -351,10 +360,19 @@
   </ul>
   <hr />
 
+  <!-- Navigation -->
+  <nav style="background-color: #f5f5f5; padding: 10px; margin-top: 20px; border-radius: 5px;">
+    <strong>Navigation:</strong>
+    <a href="ch01.html" style="margin: 0 10px;">Chapter 1: Reliability & Compliance</a> |
+    <a href="ch02.html" style="margin: 0 10px;">Chapter 2: Testability & Production</a> |
+    <a href="ch03.html" style="margin: 0 10px;">Chapter 3: Embedded System Integration</a> |
+    <a href="index.html" style="margin: 0 10px;">Home</a>
+  </nav>
 
   <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script src="theme-switcher.js"></script>
 </body>
 
 </html>
