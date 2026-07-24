@@ -1,0 +1,13 @@
+{
+  "name": "nd-68-pdf-export",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "export": "node export-pdf.mjs",
+    "postinstall": "playwright install chromium"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "playwright": "^1.54.1"
+  }
+}

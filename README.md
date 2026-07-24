@@ -36,11 +36,24 @@ index.html                 # Program hub (materials + outcomes entry)
 site.css                   # Hub styles
 results/                   # Portfolio outcomes landing
 exports/                   # PDF exports for sharing offline
+scripts/                   # Playwright PDF export tooling
+.docs/                     # Working notes and participant list
 ND01-68/presentation/      # ND01 outcome presentation
 ND02-68/presentation/      # ND02 outcome presentation
 ND03-68/presentation/      # ND03 outcome presentation
 nd2025/                    # Interactive course materials
 ```
+
+## PDF export tooling
+
+```bash
+cd scripts
+npm install
+npm run export
+# outputs → ../exports/
+```
+
+See [`scripts/README.md`](scripts/README.md).
 
 ## Local preview
 
