@@ -4,6 +4,7 @@
   const progressBar = document.getElementById("progressBar");
   const prevBtn = document.getElementById("prev");
   const nextBtn = document.getElementById("next");
+  const homeBtn = document.getElementById("home");
   const fsBtn = document.getElementById("fs");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   let index = 0;
@@ -72,6 +73,13 @@
     counter.textContent = `${index + 1} / ${slides.length}`;
     progressBar.style.width = `${((index + 1) / slides.length) * 100}%`;
     document.title = `${slides[index].dataset.title || "Slide"} · ${courseTag}`;
+    if (homeBtn) {
+      const atCover = index === 0;
+      homeBtn.disabled = atCover;
+      homeBtn.setAttribute("aria-disabled", atCover ? "true" : "false");
+    }
+    if (prevBtn) prevBtn.disabled = index === 0;
+    if (nextBtn) nextBtn.disabled = index === slides.length - 1;
     animateSlide(slides[index]);
   };
 
@@ -80,8 +88,41 @@
     render();
   };
 
+  const goTo = (i) => {
+    index = Math.max(0, Math.min(slides.length - 1, i));
+    render();
+  };
+
+  /** Force final visual state for PDF/screenshot capture. */
+  const settle = () => {
+    const slide = slides[index];
+    if (!slide) return;
+    slide.querySelectorAll(".bar-fill[data-width]").forEach((el) => {
+      el.classList.add("is-on");
+    });
+    slide.querySelectorAll(".quality-bar").forEach((el) => {
+      el.classList.add("is-on");
+    });
+    slide.querySelectorAll("[data-count]").forEach((el) => {
+      el.textContent = el.dataset.count;
+    });
+    slide.querySelectorAll(".reveal").forEach((el) => {
+      el.style.opacity = "1";
+      el.style.transform = "none";
+      el.style.transition = "none";
+    });
+  };
+
+  window.__deck = {
+    getCount: () => slides.length,
+    getIndex: () => index,
+    goTo,
+    settle,
+  };
+
   prevBtn.addEventListener("click", () => go(-1));
   nextBtn.addEventListener("click", () => go(1));
+  if (homeBtn) homeBtn.addEventListener("click", () => goTo(0));
 
   document.addEventListener("keydown", (e) => {
     if (["ArrowRight", "PageDown", " ", "Enter"].includes(e.key)) {
@@ -90,12 +131,12 @@
     } else if (["ArrowLeft", "PageUp", "Backspace"].includes(e.key)) {
       e.preventDefault();
       go(-1);
-    } else if (e.key === "Home") {
-      index = 0;
-      render();
+    } else if (e.key === "Home" || e.key.toLowerCase() === "h") {
+      e.preventDefault();
+      goTo(0);
     } else if (e.key === "End") {
-      index = slides.length - 1;
-      render();
+      e.preventDefault();
+      goTo(slides.length - 1);
     } else if (e.key.toLowerCase() === "f") {
       toggleFs();
     }
