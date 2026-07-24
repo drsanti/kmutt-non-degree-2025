@@ -1,153 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ND2025 - Table of Contents</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .container {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15), 0 10px 20px rgba(0,0,0,0.1);
-            width: 90%;
-            max-width: 500px;
-            text-align: center;
-            transition: all 0.3s ease;
-            margin: 1rem;
-        }
-        
-        .container:hover {
-            transform: scale(1.05);
-            box-shadow: 0 30px 60px rgba(0,0,0,0.2), 0 15px 30px rgba(0,0,0,0.15);
-        }
-        
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 2rem;
-            font-size: 2.5rem;
-            font-weight: 300;
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                width: 95%;
-                padding: 1.5rem;
-                margin: 0.5rem;
-            }
-            
-            h1 {
-                font-size: 2rem;
-                margin-bottom: 1.5rem;
-            }
-            
-            .toc a {
-                padding: 0.8rem 1.5rem;
-                font-size: 1rem;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .container {
-                width: 98%;
-                padding: 1rem;
-                margin: 0.25rem;
-            }
-            
-            h1 {
-                font-size: 1.8rem;
-                margin-bottom: 1rem;
-            }
-            
-            .toc a {
-                padding: 0.7rem 1rem;
-                font-size: 0.9rem;
-            }
-            
-            .description {
-                font-size: 0.9rem;
-            }
-        }
-        
-        .toc {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .toc li {
-            margin: 1rem 0;
-        }
-        
-        .toc a {
-            display: block;
-            padding: 1rem 2rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-            transition: all 0.3s ease;
-            font-size: 1.1rem;
-            font-weight: 500;
-        }
-        
-        .toc a:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
-        }
-        
-        .description {
-            margin-top: 2rem;
-            color: #666;
-            font-style: italic;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KMUTT Non-Degree 2025 | สื่อเรียนและผลการดำเนินงาน</title>
+  <meta name="description" content="ศูนย์รวมสื่อเรียนและรายงานผลการดำเนินงานหลักสูตร Non-Degree มจธ. — Industrial IoT, Full-Stack และ Digital Twin & OPC-UA" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500;600;700;800&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="site.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>ND2025 Course Materials (Week 01)</h1>
-        <ul class="toc">
-            <li>
-                <a href="nd2025/nd00/index.html">
-                    ND00 - KMUTT Non-Degree 2025 Course Overview
-                </a>
-            </li>
-            <li>
-                <a href="nd2025/nd01/index.html">
-                    ND01 - Industrial Internet-of-Things Device Developer
-                </a>
-            </li>
-            <li>
-                <a href="nd2025/nd02/index.html">
-                    ND02 - Full-Stack Software Developer for Industrial Automation
-                </a>
-            </li>
-            <li>
-                <a href="nd2025/nd03/index.html">
-                    ND03 - Modern Systems Developer Specializing in Digital Twins and OPC-UA
-                </a>
-            </li>
-        </ul>
-        <p class="description">
-            Select a course to view the interactive presentations and learning materials.
-        </p>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./">
+        <span class="brand-mark">KMUTT</span>
+        <span class="brand-text">Non-Degree 2025</span>
+      </a>
+      <nav class="nav" aria-label="หลัก">
+        <a href="#materials">สื่อเรียน</a>
+        <a href="#outcomes">ผลการดำเนินงาน</a>
+        <a href="results/">สรุปผล /results</a>
+      </nav>
     </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">KMUTT · Non-Degree Program</p>
+          <h1>หลักสูตร Non-Degree<br /><span>Industrial Automation</span></h1>
+          <p class="lead">
+            ศูนย์รวมสื่อการเรียนรู้และรายงานผลการดำเนินงานของหลักสูตร Non-Degree
+            ด้าน Industrial IoT, Full-Stack และ Digital Twin &amp; OPC-UA
+            ภายใต้แนวคิด Competency-based Learning สู่ Credential
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#materials">เข้าสู่สื่อเรียน</a>
+            <a class="btn ghost" href="results/">ดูสรุปผลการดำเนินงาน</a>
+          </div>
+          <p class="org">
+            มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี<br />
+            ภาควิชาวิศวกรรมระบบควบคุมและเครื่องมือวัด · คณะวิศวกรรมศาสตร์
+          </p>
+        </div>
+        <div class="hero-panel" aria-hidden="true">
+          <div class="pathway">
+            <span class="node n1">IIoT</span>
+            <span class="node n2">Full-Stack</span>
+            <span class="node n3">Digital Twin</span>
+            <span class="node n4">OPC-UA</span>
+            <span class="hub">Non-Degree<br />2025</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gate">
+      <div class="wrap gate-grid">
+        <article class="gate-card">
+          <p class="label">Learning Materials</p>
+          <h2>สื่อเรียนรายหลักสูตร</h2>
+          <p>ภาพรวมหลักสูตรและสื่อ interactive สำหรับผู้เรียนและผู้สอน</p>
+          <p class="meta">ND00 · ND01 · ND02 · ND03</p>
+          <a class="btn soft" href="#materials">เปิดรายการสื่อเรียน</a>
+        </article>
+        <article class="gate-card">
+          <p class="label">Program Outcomes</p>
+          <h2>ผลการดำเนินงาน</h2>
+          <p>สรุปผู้เข้าเรียน Active Learners, Credential และการนำความรู้ไปใช้จริง</p>
+          <p class="meta">280 Admitted · 263 Active · 228 Credential</p>
+          <a class="btn soft" href="results/">เปิดหน้าสรุปผล</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="materials">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="section-label">Course Materials</p>
+          <h2>สื่อเรียนรายหลักสูตร</h2>
+          <p class="section-sub">เลือกหลักสูตรเพื่อเข้าสู่สื่อ interactive และเนื้อหาการเรียนรู้</p>
+        </header>
+
+        <div class="course-grid">
+          <article class="course-card">
+            <p class="course-code">ND00</p>
+            <h3>Course Overview</h3>
+            <p class="course-th">ภาพรวมหลักสูตร Non-Degree มจธ.</p>
+            <p class="course-en">KMUTT Non-Degree 2025 Program Overview</p>
+            <div class="course-actions">
+              <a class="btn primary" href="nd2025/nd00/index.html">เปิดสื่อเรียน</a>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <p class="course-code">ND01</p>
+            <h3>Industrial IoT Devices</h3>
+            <p class="course-th">นักพัฒนาอุปกรณ์อินเทอร์เน็ตออฟธิงส์อุตสาหกรรมสำหรับระบบอัตโนมัติ</p>
+            <p class="course-en">Industrial Internet-of-Things Device Developer for Automation Systems</p>
+            <div class="course-actions">
+              <a class="btn primary" href="nd2025/nd01/index.html">เปิดสื่อเรียน</a>
+              <a class="btn soft" href="ND01-68/presentation/">รายงานผล</a>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <p class="course-code">ND02</p>
+            <h3>Full-Stack Developer</h3>
+            <p class="course-th">นักพัฒนาซอฟต์แวร์แบบ Full-Stack สำหรับอุตสาหกรรมอัตโนมัติ</p>
+            <p class="course-en">Full-Stack Software Developer for Industrial Automation Systems</p>
+            <div class="course-actions">
+              <a class="btn primary" href="nd2025/nd02/index.html">เปิดสื่อเรียน</a>
+              <a class="btn soft" href="ND02-68/presentation/">รายงานผล</a>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <p class="course-code">ND03</p>
+            <h3>Digital Twin &amp; OPC-UA</h3>
+            <p class="course-th">นักพัฒนาระบบอัตโนมัติสมัยใหม่โดยใช้ Digital Twin และ OPC-UA</p>
+            <p class="course-en">Modern Systems Developer Specializing in Digital Twin and OPC-UA</p>
+            <div class="course-actions">
+              <a class="btn primary" href="nd2025/nd03/index.html">เปิดสื่อเรียน</a>
+              <a class="btn soft" href="ND03-68/presentation/">รายงานผล</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="results-banner" id="outcomes">
+          <div>
+            <h2>สรุปผลการดำเนินงาน 3 หลักสูตร</h2>
+            <p>
+              รายงานภาพรวมการเข้าถึงผู้เรียน อัตรา Active Learners และการได้รับ Credential
+              พร้อม presentation รายหลักสูตรสำหรับผู้บริหารและคณาจารย์
+            </p>
+            <div class="kpi-inline">
+              <div><strong>280</strong><span>Admitted รวม</span></div>
+              <div><strong>263</strong><span>Active รวม</span></div>
+              <div class="pos"><strong>228</strong><span>Credential รวม</span></div>
+              <div class="pos"><strong>86.7%</strong><span>Credential / Active</span></div>
+            </div>
+          </div>
+          <a class="btn primary" href="results/">เปิดหน้าสรุปผล</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <strong>KMUTT Non-Degree 2025</strong>
+        <p>ภาควิชาวิศวกรรมระบบควบคุมและเครื่องมือวัด · คณะวิศวกรรมศาสตร์</p>
+      </div>
+      <div class="footer-links">
+        <a href="results/">สรุปผลการดำเนินงาน</a>
+        <a href="https://github.com/drsanti/kmutt-non-degree-2025">GitHub Repository</a>
+        <a href="./">หน้าหลัก</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

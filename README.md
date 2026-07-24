@@ -1,56 +1,42 @@
-# KMUTT Non-Degree 2025 - Course Materials
+# KMUTT Non-Degree 2025
 
-This repository contains the interactive course materials for the KMUTT Non-Degree 2025 program.
+ศูนย์รวมสื่อเรียนและรายงานผลการดำเนินงานหลักสูตร Non-Degree
+มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
+ภาควิชาวิศวกรรมระบบควบคุมและเครื่องมือวัด · คณะวิศวกรรมศาสตร์
 
-## 🎯 Available Courses
+## Live site
 
-### ND01 - Industrial Internet-of-Things Device Developer for Automation Systems
-- **Path**: `/nd2025/nd01/`
-- **Description**: Learn about IoT device development for industrial automation systems
-- **Presentation**: Interactive Gamma presentation with loading indicators
+- Hub: https://drsanti.github.io/kmutt-non-degree-2025/
+- Results: https://drsanti.github.io/kmutt-non-degree-2025/results/
 
-### ND02 - Full-Stack Software Developer for Industrial Automation Systems  
-- **Path**: `/nd2025/nd02/`
-- **Description**: Master full-stack development for industrial automation
-- **Presentation**: Interactive Gamma presentation with loading indicators
+## Courses
 
-## 🚀 Getting Started
+| Code | Focus | Materials | Outcomes |
+|------|--------|-----------|----------|
+| ND00 | Program overview | `/nd2025/nd00/` | — |
+| ND01 | Industrial IoT Devices | `/nd2025/nd01/` | `/ND01-68/presentation/` |
+| ND02 | Full-Stack for Industrial Automation | `/nd2025/nd02/` | `/ND02-68/presentation/` |
+| ND03 | Digital Twin & OPC-UA | `/nd2025/nd03/` | `/ND03-68/presentation/` |
 
-1. Visit the [live site](https://drsanti.github.io/kmutt-non-degree-2025/) to access the course materials
-2. Use the table of contents to navigate between courses
-3. Each course contains interactive presentations with smooth loading animations
+## Repository structure
 
-## ✨ Features
-
-- **Responsive Design**: Works on all devices and screen sizes
-- **Loading Indicators**: Smooth loading animations for better user experience
-- **Interactive Presentations**: Embedded Gamma presentations for engaging learning
-- **Modern UI**: Clean, professional design with hover effects and animations
-
-## 🛠️ Technology Stack
-
-- HTML5
-- CSS3 (with animations and transitions)
-- JavaScript (for loading indicators)
-- GitHub Pages (for hosting)
-
-## 📁 Project Structure
-
-```
-├── index.html                 # Main table of contents
-├── nd2025/
-│   ├── nd01/
-│   │   └── index.html        # ND01 course presentation
-│   └── nd02/
-│       └── index.html        # ND02 course presentation
-└── README.md                 # This file
+```text
+index.html                 # Program hub (materials + outcomes entry)
+site.css                   # Hub styles
+results/                   # Portfolio outcomes landing
+ND01-68/presentation/      # ND01 outcome presentation
+ND02-68/presentation/      # ND02 outcome presentation
+ND03-68/presentation/      # ND03 outcome presentation
+nd2025/                    # Interactive course materials
 ```
 
-## 🔗 Links
+## Local preview
 
-- **Live Site**: [https://drsanti.github.io/kmutt-non-degree-2025/](https://drsanti.github.io/kmutt-non-degree-2025/)
-- **GitHub Repository**: [https://github.com/drsanti/kmutt-non-degree-2025](https://github.com/drsanti/kmutt-non-degree-2025)
+```bash
+python -m http.server 8765 --directory .
+# open http://localhost:8765/
+```
 
----
+## Deploy
 
-*Built with ❤️ for KMUTT Non-Degree 2025 students*
+Push to `main` on GitHub Pages. Do not replace course materials under `nd2025/` when updating outcomes pages.
