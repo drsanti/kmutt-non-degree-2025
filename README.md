@@ -9,6 +9,17 @@
 - Hub: https://drsanti.github.io/kmutt-non-degree-2025/
 - Results: https://drsanti.github.io/kmutt-non-degree-2025/results/
 
+## PDF exports
+
+| File | Description |
+|------|-------------|
+| [`exports/results.pdf`](exports/results.pdf) | สรุปผลภาพรวม 3 หลักสูตร |
+| [`exports/ND01-68.pdf`](exports/ND01-68.pdf) | รายงานผล ND01 IIoT |
+| [`exports/ND02-68.pdf`](exports/ND02-68.pdf) | รายงานผล ND02 Full-Stack |
+| [`exports/ND03-68.pdf`](exports/ND03-68.pdf) | รายงานผล ND03 Digital Twin |
+
+Live download base: https://drsanti.github.io/kmutt-non-degree-2025/exports/
+
 ## Courses
 
 | Code | Focus | Materials | Outcomes |
@@ -24,6 +35,7 @@
 index.html                 # Program hub (materials + outcomes entry)
 site.css                   # Hub styles
 results/                   # Portfolio outcomes landing
+exports/                   # PDF exports for sharing offline
 ND01-68/presentation/      # ND01 outcome presentation
 ND02-68/presentation/      # ND02 outcome presentation
 ND03-68/presentation/      # ND03 outcome presentation

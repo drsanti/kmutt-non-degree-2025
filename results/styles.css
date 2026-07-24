@@ -397,6 +397,37 @@ em { font-style: normal; }
   background: linear-gradient(90deg, #176B43, var(--green));
 }
 
+.downloads { padding: 2.5rem 0 3.5rem; }
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.9rem;
+}
+.download-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.2rem 1.1rem;
+  display: grid;
+  gap: 0.35rem;
+  transition: border-color 0.18s ease, transform 0.18s ease;
+}
+.download-card:hover {
+  border-color: rgba(232, 119, 34, 0.45);
+  transform: translateY(-2px);
+}
+.download-card strong {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+.download-card span {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
 /* Footer */
 .site-footer {
   background: #11151C;
@@ -428,12 +459,16 @@ em { font-style: normal; }
 @media (max-width: 960px) {
   .hero-grid,
   .course-grid,
-  .kpi-strip {
+  .kpi-strip,
+  .download-grid {
     grid-template-columns: 1fr;
   }
   .hero-panel { display: none; }
   .nav { gap: 0.8rem; font-size: 0.84rem; }
   .kpi-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .download-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
