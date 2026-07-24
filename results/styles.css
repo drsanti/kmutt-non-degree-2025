@@ -237,6 +237,23 @@ em { font-style: normal; }
   color: var(--muted);
   font-weight: 500;
 }
+.policy-note {
+  margin-top: 0.9rem;
+  padding: 1rem 1.15rem;
+  background: var(--orange-soft);
+  border: 1px solid rgba(232, 119, 34, 0.28);
+  border-radius: 14px;
+  color: var(--ink-2);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+.policy-note strong {
+  display: inline-block;
+  font-family: var(--font-display);
+  color: var(--orange-deep);
+  margin-right: 0.45rem;
+}
+.policy-note b { color: var(--ink); font-weight: 700; }
 
 /* Courses */
 .courses, .compare {
